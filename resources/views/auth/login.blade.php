@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Welcome to the gorilla fun planner... Please login or make an account')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
