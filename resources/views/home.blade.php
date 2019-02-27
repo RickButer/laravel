@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Welcome to the gorilla fun planner... Please login or make an account')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -15,10 +15,12 @@
                     @endif
 
                     You are logged in!
-                    
+                    <br />
+                    <div id="counter"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script src="../js/redirect.js"></script>
 @endsection

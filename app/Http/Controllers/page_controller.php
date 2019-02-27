@@ -9,4 +9,8 @@ class page_controller extends Controller
     Public Function index(){
         return view('auth.login', ['title' => 'Welcome to the gorilla fun planner... Please login or make an account']);
     }
+
+    Public Function to_do(){
+        return view('to_do');
+    }
 }
