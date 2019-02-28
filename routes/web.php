@@ -13,6 +13,7 @@
 
 Route::get('/', 'page_controller@index');
 Route::get('/to_do', 'page_controller@to_do');
+Route::get('/to_do/new', 'to_doController@create');
 
 Auth::routes();
 

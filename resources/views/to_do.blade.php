@@ -11,24 +11,24 @@
             <div class="card">
                 <div class="c_header">What do you want to do?</div><br />
                 <div class="">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="/to_do/new">
                         @csrf
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">Pick the day</label>
                             <div class="col-md-6">
                                 <input class="radio" type="radio" name="what_day" value="monday"> monday<br />
                                 <input class="radio" type="radio" name="what_day" value="tuesday"> tuesday <br />
-                                <input class="radio" type="radio" name="what_day" value="tuesday"> wednesday <br />
-                                <input class="radio" type="radio" name="what_day" value="tuesday"> thursday <br />
-                                <input class="radio" type="radio" name="what_day" value="tuesday"> friday <br />
-                                <input class="radio" type="radio" name="what_day" value="tuesday"> saturday <br />
-                                <input class="radio" type="radio" name="what_day" value="tuesday"> sunday <br />
+                                <input class="radio" type="radio" name="what_day" value="wednesday"> wednesday <br />
+                                <input class="radio" type="radio" name="what_day" value="thursday"> thursday <br />
+                                <input class="radio" type="radio" name="what_day" value="friday"> friday <br />
+                                <input class="radio" type="radio" name="what_day" value="saturday"> saturday <br />
+                                <input class="radio" type="radio" name="what_day" value="sunday"> sunday <br />
                             </div>
                         </div><br />
                         <div class="form-group row">
                             <label for="where_to" class="col-md-4 col-form-label text-md-right">where do you want to go?</label>
                             <div class="col-md-6">
-                                <input type="email" placeholder="bar...restaurant...beach..." class="where_to" name="email" value="" required>
+                                <input type="text" placeholder="bar...restaurant...beach..." class="where_to" name="where_to" value="" required>
                             </div>
                         </div><br />
                         <div class="form-group row">
